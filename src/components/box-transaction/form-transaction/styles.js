@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+flex: 1;
   color: var(--primaryColor);
   box-sizing: border-box;
   padding: 50px;
@@ -24,11 +25,17 @@ export const Container = styled.div`
       margin: 0px 5px 0px 10px;
     }
 
+    .input-obs {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 13px;
+    }
+
     .list-days {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
-      max-width: 320px;
+      max-width: 100%;
 
       >div {
         padding: 2px;

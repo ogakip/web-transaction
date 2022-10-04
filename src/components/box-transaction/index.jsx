@@ -4,13 +4,13 @@ import { ListReceiving } from "./list-receiving"
 import { useState } from "react"
 
 export const BoxTransaction = () => {
-    const [data, setData] = useState()
+    const [data, setData] = useState(undefined)
 
     return (
         <Styled.Container>
             <Styled.Box>
-                <FormTransaction/>
-                <ListReceiving/>
+                <FormTransaction setData={setData}/>
+                <ListReceiving data={data}/>
             </Styled.Box>
         </Styled.Container>
     )
