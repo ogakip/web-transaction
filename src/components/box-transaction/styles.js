@@ -9,5 +9,7 @@ align-items: center;
 `
 
 export const Box = styled.div`
-
+display: flex;
+border: 1px solid var(--secundaryColor);
+border-radius: 5px;
 `
